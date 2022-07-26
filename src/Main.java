@@ -5,5 +5,6 @@ public class Main {
         SalesManager manager1 = new SalesManager(sales1);
 
         System.out.println("Максимальная продажа - " + manager1.max());
+        System.out.println("Среднее обрезанное значение - " + manager1.stat());
     }
 }
