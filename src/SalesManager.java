@@ -27,13 +27,9 @@ public class SalesManager {
 
     public long stat() {
         long sum = 0;
-        int count = 0;
         for (long sale : sales) {
-            if (sale != max() && sale != min()) {
-                sum += sale;
-                count += 1;
-            }
+            sum += sale;
         }
-        return sum / count;
+        return (sum - min() - max()) / (sales.length - 2);
     }
 }
